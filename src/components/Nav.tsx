@@ -11,9 +11,9 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 // Nav Components
-import ColorModeSwitcher from './ColorModeSwitcher';
-import NavRoutesLink from './NavRoutesLink';
-import NavSocialLinks from './NavSocialLinks';
+import ColorModeSwitcher from './NavBarComponents/ColorModeSwitcher';
+import NavRoutesLink from './NavBarComponents/NavRoutesLink';
+import NavSocialLinks from './NavBarComponents/NavSocialLinks';
 // Nav Components
 import routes from './assets/NavRoutes';
 
@@ -23,7 +23,12 @@ export default function Nav() {
     <>
 
 {/* Dropdown Menu Web(left side of the Nav) */}
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box 
+        bg={useColorModeValue('gray.100', 'gray.900')}
+        px={4} 
+        borderBottomWidth="1px"
+        borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
+      >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

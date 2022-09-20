@@ -1,8 +1,8 @@
 import { Box, Flex, Link, useColorModeValue, Icon, IconButton, HStack } from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import React from "react"
-import TopDownAnimation from "../animations/TopDown"
-import Socials from "./assets/SocialMedias"
+import TopDownAnimation from "../../animations/TopDown"
+import Socials from "../assets/SocialMedias"
 
 export default function NavSocialLinks() {
   return (

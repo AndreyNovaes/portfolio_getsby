@@ -6,7 +6,7 @@ import {
   useColorMode 
 } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import RightMiddleAnimation from "../animations/RightMiddle";
+import RightMiddleAnimation from "../../animations/RightMiddle";
 
 export default function ColorModeSwitcher() {
   const ColorModeSwitcher = useColorMode().toggleColorMode;
