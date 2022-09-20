@@ -1,36 +1,21 @@
-import { ReactNode } from 'react';
 import React from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
-  Image,
-  Icon,
-  Slide,
-  Switch,
-  useColorMode,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import NavLink from './NavRoutesLink';
-import { GrConfigure } from 'react-icons/gr';
-import { FaMoon, FaSun } from 'react-icons/fa';
+
+// Nav Components
 import ColorModeSwitcher from './ColorModeSwitcher';
 import NavRoutesLink from './NavRoutesLink';
 import NavSocialLinks from './NavSocialLinks';
-
-const Links = ['Home', 'Sobre', 'Projetos'];
+// Nav Components
+import routes from './assets/NavRoutes';
 
 export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -52,8 +37,8 @@ export default function Nav() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavRoutesLink key={link}>{link}</NavRoutesLink>
+              {routes.map(({name, path}) => (
+                <NavRoutesLink key={name}>{name}</NavRoutesLink>
               ))}
             </HStack>
           </HStack>
@@ -91,17 +76,16 @@ export default function Nav() {
 {/* Hamburguer Menu (left side Mobile) */}
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavRoutesLink key={link}>{link}</NavRoutesLink>
-              ))}
-            </Stack>
+              <Stack as={'nav'} spacing={4}>
+                {routes.map(({name, path}) => (
+                  <NavRoutesLink key={name}>{name}</NavRoutesLink>
+                ))}
+                <NavSocialLinks />
+              </Stack>
           </Box>
         ) : null}
       </Box>
 {/* Hamburguer Menu (left side Mobile) */}
-
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }
