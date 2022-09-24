@@ -6,19 +6,20 @@ import LeftMiddleAnimation from "../../animations/LeftMiddle";
 
 export default function NavRoutesLink({ children }: { children: ReactNode }) {
   return (
-    <LeftMiddleAnimation>
-      <Link
-        as="button"
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-          textDecoration: 'none',
-          bg: useColorModeValue('gray.200', 'gray.700'),
-        }}
-        href={'#'}>
-        {children}
-      </Link>
-    </LeftMiddleAnimation>
+    <Link
+      as="button"
+      px={2}
+      py={1}
+      rounded={'md'}
+      _hover={{
+        textDecoration: 'none',
+        bg: useColorModeValue('gray.200', 'gray.700'),
+      }}
+      _focus={{
+        boxShadow: 'outline',
+      }}
+      href={'#'}>
+      {children}
+    </Link>
   );
 }
