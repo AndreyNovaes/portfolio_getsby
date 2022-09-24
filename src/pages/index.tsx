@@ -3,14 +3,21 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Nav from '../components/Nav'
 import { motion } from 'framer-motion'
 import Hero from '../components/Hero'
+import OpacityLowDelay from '../animations/NoMovementOpacity'
 
 export default function Home() {
   return (
-    <header>
+    <>
       <ChakraProvider >
-        <Nav />
-        <Hero />
+        <header>
+          <Nav />
+        </header>
+        <main>
+          <OpacityLowDelay>
+            <Hero />
+          </OpacityLowDelay>
+        </main>
       </ChakraProvider>
-    </header>
+    </>
   )
 }

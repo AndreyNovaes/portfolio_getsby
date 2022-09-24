@@ -40,23 +40,28 @@ export default function Hero() {
             <Text as={'span'} color={'green.400'}>
             </Text>
           </Heading>
+          <Text color={'gray.500'} fontSize={{ base: 'lg', lg: 'xl' }}>
+            Sou um desenvolvedor apaixonado por tecnologia, buscando sempre me tornar uma pessoa melhor hoje do que fui ontem, com muito esforço, dedicação, e claro, muito café.
+          </Text>
           <Stack
-            direction={'column'}
-            spacing={3}
+            direction={{ base: 'column', md: 'row' }}
+            spacing={{ base: 4, md: 8 }}
             align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Veja meus Trabalhos
-            </Button>
-          </Stack>
+            justify={'center'}>
+              <Button
+                rounded={'full'}
+                size={'lg'}
+                fontWeight={'normal'}
+                px={6}
+                colorScheme={'blue'}
+                bg={'blue.400'}
+                _hover={{ bg: 'blue.500' }}>
+                Conheça meu trabalho
+              </Button>
+              <Button rounded={'full'} size={'lg'} fontWeight={'normal'} px={6}>
+                Entre em contato
+              </Button>
+            </Stack>
         </Stack>
       </Container>
     </>
