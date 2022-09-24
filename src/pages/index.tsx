@@ -9,6 +9,7 @@ export default function Home() {
     <header>
       <ChakraProvider >
         <Nav />
+        <Hero />
       </ChakraProvider>
     </header>
   )
