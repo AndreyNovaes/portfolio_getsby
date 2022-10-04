@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-export default function RightMiddleAnimation({ children }: { children: React.ReactNode }) {
+export default function RightMiddleAnimation(props: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ x: 200, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ delay: 0.5, duration: 1.5 }}
+      initial={{ opacity: 0, x: "100%" }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}
+      {...props}
     >
-      {children}
+      {props.children}
     </motion.div>
   );
 }
