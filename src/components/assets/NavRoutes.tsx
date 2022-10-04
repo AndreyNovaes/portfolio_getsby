@@ -5,11 +5,11 @@ const routes = [
   },
   {
     name: 'Sobre',
-    path: '/about',
+    path: '/sobre',
   },
   {
     name: 'Projetos',
-    path: '/projects',
+    path: '/projetos',
   },
 ]
 
