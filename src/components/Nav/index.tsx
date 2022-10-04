@@ -35,7 +35,7 @@ export default function Nav() {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: '-100%' },
   };
-
+  
   return (
     <>
 
@@ -61,7 +61,7 @@ export default function Nav() {
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}>
                 {routes.map(({name, path}) => (
-                  <NavRoutesLink key={name}>{name}</NavRoutesLink>
+                  <NavRoutesLink href={path} key={name}>{name}</NavRoutesLink>
                 ))}
               </HStack>
             </HStack>
@@ -85,7 +85,7 @@ export default function Nav() {
 {/* Social Icons Web, middle of the Nav */}
 
 {/* Color Mode Switcher(right side, web and mobile) */}
-          <Flex 
+          <Flex
           _hover={{ 
             textDecoration: 'none',
             cursor: 'pointer',
@@ -110,7 +110,7 @@ export default function Nav() {
           <Box pb={4} display={{ md: 'none' }}>
               <Stack as={'nav'} spacing={4}>
                 {routes.map(({name, path}) => (
-                  <NavRoutesLink key={name}>{name}</NavRoutesLink>
+                  <NavRoutesLink href={path} key={name}>{name}</NavRoutesLink>
                 ))}
                 <HStack align={'center'} justify='center' spacing={'24px'} alignContent='center'>
                   <Center>
