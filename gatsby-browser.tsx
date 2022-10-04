@@ -1,3 +1,6 @@
+import React from "react"
+
+// Nprogress config
 import NProgress, { NProgressOptions } from "nprogress"
 
 export const onInitialClientRender = () => {
@@ -25,4 +28,13 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
     NProgress.done()
   }, 100)
 }
+// Nprogress config
 
+// Layout config with gatsby wrapper
+import Layout from './src/components/Layout'
+
+export const wrapPageElement = ({ element, props }) => {
+  // Wraps every page in a component
+  return <Layout {...props}>{element}</Layout>;
+};
+// Layout config with gatsby wrapper

@@ -4,9 +4,10 @@ import Projects from '../../components/Projects'
 import Layout from '../../components/Layout'
 
 export default function Projetos() {
+  // o wrapper ja foi setado no gatsby-browser.tsx
   return (
-    <Layout>
+    <>
       <Projects />
-    </Layout>
+    </>
   )
 }
