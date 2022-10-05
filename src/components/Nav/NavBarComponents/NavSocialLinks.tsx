@@ -1,6 +1,6 @@
 import { Box, Flex, Link, useColorModeValue, IconButton } from "@chakra-ui/react"
 import React from "react"
-import Socials from "../../assets/SocialMedias"
+import Socials from "../../../assets/SocialMedias"
 
 export default function NavSocialLinks() {
   return (

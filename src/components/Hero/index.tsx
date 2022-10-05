@@ -51,10 +51,16 @@ export default function Hero() {
                 fontWeight={'normal'}
                 px={6}
                 colorScheme={'blue'}
-                >
+              >
                 Conheça meu trabalho
               </Button>
-              <Button colorScheme={'whatsapp'} rounded={'full'} size={'lg'} fontWeight={'normal'} px={6}>
+              <Button 
+                colorScheme={'green'} 
+                rounded={'full'} 
+                size={'lg'} 
+                fontWeight={'normal'} 
+                px={6}
+              >
                 Entre em contato
               </Button>
             </Stack>
