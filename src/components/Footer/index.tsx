@@ -26,9 +26,8 @@ export default function Footer() {
           &copy; {new Date().getUTCFullYear()} - All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <NavSocialLinks /> 
-        </Stack>  
+        </Stack>
       </Container>
     </Box>
   );
 }
-

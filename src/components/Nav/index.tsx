@@ -20,7 +20,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import ColorModeSwitcher from './NavBarComponents/ColorModeSwitcher';
 import NavRoutesLink from './NavBarComponents/NavRoutesLink';
 import NavSocialLinks from './NavBarComponents/NavSocialLinks';
-import routes from '../assets/NavRoutes';
+import routes from '../../assets/NavRoutes';
 // Nav Components
 
 // animations
@@ -69,7 +69,7 @@ export default function Nav() {
 {/* Dropdown Menu Web(left side of the Nav) */}
 
 {/* Social Icons Web, middle of the Nav */}
-        <TopDownAnimation>
+        {/* <TopDownAnimation>
           <Flex alignItems={'center'}>  
             <HStack
               as={'nav'}
@@ -81,7 +81,7 @@ export default function Nav() {
                 </Box> 
             </HStack>
           </Flex>
-        </TopDownAnimation>
+        </TopDownAnimation> */}
 {/* Social Icons Web, middle of the Nav */}
 
 {/* Color Mode Switcher(right side, web and mobile) */}
@@ -112,11 +112,10 @@ export default function Nav() {
                 {routes.map(({name, path}) => (
                   <NavRoutesLink href={path} key={name}>{name}</NavRoutesLink>
                 ))}
+                {/* With new footer, think this is not necessary anymore
                 <HStack align={'center'} justify='center' spacing={'24px'} alignContent='center'>
-                  <Center>
-                    <NavSocialLinks />
-                  </Center>
-                </HStack>
+                  <NavSocialLinks />
+                </HStack> */}
 
               </Stack>
           </Box>
