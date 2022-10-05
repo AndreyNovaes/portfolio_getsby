@@ -16,9 +16,8 @@ export default function NavRoutesLink(props: { children: ReactNode; href: string
         textDecoration: 'none',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
-      _focus={{
+      _activeLink={{
         fontWeight: 'semibold',
-        boxShadow: 'outline',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
       to={props.href}

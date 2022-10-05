@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChakraProvider, Container } from '@chakra-ui/react'
+import { Box, ChakraProvider, Container, Flex, VStack } from '@chakra-ui/react'
 import Nav from '../components/Nav'
 import OpacityLowDelay from '../animations/noMovement/OpacityLowDelay'
 import Footer from '../components/Footer'
@@ -8,17 +8,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <ChakraProvider>
-        <header>
-          <Nav />
-        </header>
-        <main>
-          <OpacityLowDelay>
-            {children}
-          </OpacityLowDelay>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Box minH="100vh">
+            <Nav />
+            <OpacityLowDelay>
+              {children}
+            </OpacityLowDelay>
+            <Footer />
+        </Box>
       </ChakraProvider>
     </>
   )

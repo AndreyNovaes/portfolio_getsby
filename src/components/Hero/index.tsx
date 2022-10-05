@@ -12,7 +12,7 @@ import TypewriterComponent from 'typewriter-effect';
 export default function Hero() {
   return (
     <>
-      <Container maxW={'4xl'}>
+      <Container maxW='4xl'>
         <Stack
           as={Box}
           textAlign={'center'}
