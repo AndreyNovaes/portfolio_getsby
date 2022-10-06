@@ -11,14 +11,14 @@ export default function NavRoutesLink(props: { children: ReactNode; href: string
       as={gatsbyLink}
       px={2}
       py={1}
-      rounded={'md'}
+      rounded={'full'}
       _hover={{
         textDecoration: 'none',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
       _activeLink={{
         fontWeight: 'semibold',
-        bg: useColorModeValue('gray.200', 'gray.700'),
+        bg: useColorModeValue('gray.300', 'gray.700'),
       }}
       to={props.href}
     >
