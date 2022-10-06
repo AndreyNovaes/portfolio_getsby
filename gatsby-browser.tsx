@@ -33,9 +33,17 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
 // Layout config with gatsby wrapper
 import Layout from './src/Layout'
+import { ChakraProvider, theme } from '@chakra-ui/react'
 
 export const wrapPageElement = ({ element, props }) => {
   // Wraps every page in a component
-  return <Layout {...props}>{element}</Layout>;
+  theme.config.initialColorMode = "dark"
+  return (
+    <>
+      <ChakraProvider theme={theme}>
+        <Layout {...props}>{element}</Layout>
+      </ChakraProvider>
+    </>
+  )
 };
 // Layout config with gatsby wrapper
