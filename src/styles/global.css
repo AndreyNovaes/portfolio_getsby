@@ -1,4 +1,3 @@
-/* body {
-  width: max;
-  object-fit: fill;
-} */
+body {
+  overflow: hidden; 
+}
