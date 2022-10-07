@@ -25,7 +25,7 @@ const Socials = [
   },
   {
     name: "Whatsapp",
-    path: "https://wa.me/5521999320570?",
+    path: "https://wa.me/552194312856",
     icon: whatsappIcon,
   },
   {
