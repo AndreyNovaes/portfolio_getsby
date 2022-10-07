@@ -7,6 +7,8 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import NavSocialLinks from '../Nav/NavBarComponents/NavSocialLinks';
+import LeftMiddleAnimation from '../../animations/movement/LeftMiddle';
+import RightMiddleAnimation from '../../animations/movement/RightMiddle';
 
 export default function Footer() {
   return (
@@ -22,11 +24,19 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text> 
-          &copy; {new Date().getUTCFullYear()} - All rights reserved</Text>
+        
+        <LeftMiddleAnimation>
+          <Text> 
+            &copy; {new Date().getUTCFullYear()} - All rights reserved
+          </Text>
+        </LeftMiddleAnimation>
+
         <Stack direction={'row'} spacing={6}>
-          <NavSocialLinks /> 
+          <RightMiddleAnimation>
+            <NavSocialLinks />
+          </RightMiddleAnimation>
         </Stack>
+
       </Container>
     </Box>
   );
