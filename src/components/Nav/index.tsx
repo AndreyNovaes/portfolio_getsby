@@ -7,9 +7,6 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Link,
-  Button,
-  Center,
 } from '@chakra-ui/react';
 
 // Mobile Nav
@@ -19,7 +16,6 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 // Nav Components
 import ColorModeSwitcher from './NavBarComponents/ColorModeSwitcher';
 import NavRoutesLink from './NavBarComponents/NavRoutesLink';
-import NavSocialLinks from './NavBarComponents/NavSocialLinks';
 import routes from '../../assets/NavRoutes';
 // Nav Components
 
