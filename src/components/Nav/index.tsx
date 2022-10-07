@@ -67,22 +67,6 @@ export default function Nav() {
           </LeftMiddleAnimation>
 {/* Dropdown Menu Web(left side of the Nav) */}
 
-{/* Social Icons Web, middle of the Nav */}
-        {/* <TopDownAnimation>
-          <Flex alignItems={'center'}>  
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}
-            >
-                <Box >
-                  <NavSocialLinks />
-                </Box> 
-            </HStack>
-          </Flex>
-        </TopDownAnimation> */}
-{/* Social Icons Web, middle of the Nav */}
-
 {/* Color Mode Switcher(right side, web and mobile) */}
           <Flex
           _hover={{ 
@@ -111,11 +95,6 @@ export default function Nav() {
                 {routes.map(({name, path}) => (
                   <NavRoutesLink href={path} key={name}>{name}</NavRoutesLink>
                 ))}
-                {/* With new footer, think this is not necessary anymore
-                <HStack align={'center'} justify='center' spacing={'24px'} alignContent='center'>
-                  <NavSocialLinks />
-                </HStack> */}
-
               </Stack>
           </Box>
         </motion.nav>

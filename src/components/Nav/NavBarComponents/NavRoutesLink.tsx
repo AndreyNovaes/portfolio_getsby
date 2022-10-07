@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { Link as gatsbyLink} from "gatsby";
 
-
 export default function NavRoutesLink(props: { children: ReactNode; href: string }) {
   return (
     <Link
