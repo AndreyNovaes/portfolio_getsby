@@ -26,7 +26,6 @@ import routes from '../../assets/NavRoutes';
 // animations
 import { motion } from 'framer-motion';
 import LeftMiddleAnimation from '../../animations/movement/LeftMiddle';
-import TopDownAnimation from '../../animations/movement/TopDown';
 // animations
 
 export default function Nav() {

@@ -20,7 +20,7 @@ export const onInitialClientRender = () => {
 export const onRouteUpdate = ({ location, prevLocation }) => {
   NProgress.configure({
     showSpinner: false,
-    trickleSpeed: 150,
+    trickleSpeed: 100,
     minimum: 0.2,
   } as NProgressOptions)
 

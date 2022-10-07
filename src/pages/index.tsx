@@ -12,15 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <AnimatePresence>
-        {show && (
-          <motion.div
-            exit={{ x: -1500, transition: { duration: 1 } }}
-          >
-            <Hero />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <Hero />
     </>
   )
 }
