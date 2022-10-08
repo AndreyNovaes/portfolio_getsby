@@ -19,6 +19,7 @@ export default function NavRoutesLink(props: { children: ReactNode; href: string
         fontWeight: 'semibold',
         bg: useColorModeValue('gray.300', 'gray.700'),
       }}
+      // active = {props.href === window.location.pathname}
       to={props.href}
     >
       {props.children}

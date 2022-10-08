@@ -33,6 +33,15 @@ const config: GatsbyConfig = {
         icon: `./src/assets/images/portfolio.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-image`,
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-transformer-sharp`,
+    },
   ],
 }
 
