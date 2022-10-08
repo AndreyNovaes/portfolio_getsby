@@ -23,8 +23,8 @@ export default function ImageBox() {
           overflow={'hidden'}
         >
           <Box
-            w="500px"
-            h="500px"
+            w="100%"
+            h="100%"
             bgPosition="center"
             bgSize="cover"
             bgRepeat="no-repeat"

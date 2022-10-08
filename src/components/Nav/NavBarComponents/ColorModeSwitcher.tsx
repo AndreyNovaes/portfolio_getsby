@@ -19,7 +19,9 @@ export default function ColorModeSwitcher() {
         icon={<Icon as={colorModeIcons} />}
         onClick={ColorModeSwitcher}
         variant="outline"
-        size="lg"
+        size={
+          useColorModeValue("md", "md")
+        }
         _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
       />
     </RightMiddleAnimation>
