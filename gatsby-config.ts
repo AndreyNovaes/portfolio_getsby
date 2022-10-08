@@ -33,12 +33,6 @@ const config: GatsbyConfig = {
         icon: `./src/assets/images/portfolio.png`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: "UA-1asdfa75000-1fdasfas",
-    //   },
-    // },
   ],
 }
 
