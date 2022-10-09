@@ -8,6 +8,7 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import TypewriterComponent from 'typewriter-effect';
+import { Link as gatsbyLink } from 'gatsby';
 
 export default function Hero() {
   return (
@@ -51,6 +52,8 @@ export default function Hero() {
                 fontWeight={'normal'}
                 px={6}
                 colorScheme={'blue'}
+                as={gatsbyLink}
+                to='/projetos'
               >
                 Conheça meu trabalho
               </Button>
@@ -60,6 +63,8 @@ export default function Hero() {
                 size={'lg'} 
                 fontWeight={'normal'} 
                 px={6}
+                as={gatsbyLink}
+                to='/contato'
               >
                 Entre em contato
               </Button>
