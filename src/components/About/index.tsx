@@ -20,6 +20,7 @@ export default function About() {
         <Center>
           <TextBox />
         </Center>
+        <br />
         <ImageBox />
       </Stack>
     </>
