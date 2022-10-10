@@ -49,14 +49,14 @@ export default function TextBox() {
               <Text color={useColorModeValue('brand.600', 'brand.400')} align={{ base: 'center', md: 'left' }}> 
                 Entrei em uma 
                 faculdade de sistemas de informação, onde tive meu primeiro contato com a programação web, porém, não
-                sentia que gerava valor em relação a programação, era um curso lento, desatualizado e estático, queria algo mais 
-                dinâmico e rápido então comecei a pesquisar sobre outros cursos e ferramentas para estudar por conta própria,
+                sentia que a faculdade estava gerando valor em relação a minha carreira, era um curso lento, desatualizado e estático,
+                queria algo mais dinâmico, rápido, algo que realmente pudesse gerar valor na minha carreira, então comecei a pesquisar sobre outros cursos e ferramentas para estudar por conta própria,
                 acabei encontrando o curso de desenvolvimento web da Trybe, onde aprendi a programar em javascript, react, node,
                 entre outras tecnologias.
               </Text>
               <br />
               <Text as="p" color={useColorModeValue('brand.600', 'brand.400')} align={{ base: 'center', md: 'left' }}>
-                Me espelho em grandes mestres como&nbsp;
+                Me inspiro em grandes figuras como&nbsp;
                 <Link color='telegram.400' as={gatsbyLink} target='_blank' to='https://www.youtube.com/c/RodrigoBranas'  >
                   Rodrigo Branas
                 </Link>
