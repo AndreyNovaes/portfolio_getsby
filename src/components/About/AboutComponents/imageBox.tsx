@@ -8,7 +8,7 @@ import {
   Flex,
   Center
 } from '@chakra-ui/react';
-import MinhaFoto from '../../../images/staticImage';
+import MinhaFoto from '../../../images/AboutImage';
 
 export default function ImageBox() {
   return (
