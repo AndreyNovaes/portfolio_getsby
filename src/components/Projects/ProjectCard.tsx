@@ -31,32 +31,33 @@ export default function Projects({
       <Box
         key={title}
         bg={useColorModeValue('gray.200', 'gray.800')}
-        maxW="sm"
+        maxW="lg"
         borderWidth="1px"
         borderRadius="lg"
-        overflow="hidden"
-        boxShadow="lg"
-        m="2"
+        padding="4"
         _hover={{
           boxShadow: "2xl",
           transition: "all 0.5s ease-in-out",
-          transform: "scale(1.06)",
+          transform: "scale(1.04)",
           transitionTimingFunction: "cubic-bezier(0.075, 0.82, 0.165, 1)",
         }}
-
       >
-        <Image
-          src={image}
-          alt={title}
-          width={400}
-          height={400}
-          placeholder="blurred"
-        />
+        <Center>
+          <Image
+            src={image}
+            alt={title}
+            width={400}
+            height={400}
+            placeholder="blurred"
+            objectFit="cover"
+          />
+        </Center>
         <Box p="6">
           <Box
             fontWeight="semibold"
             as="h4"
             lineHeight="tight"
+            fontSize="lg"
             color={useColorModeValue("gray.800", "whiteAlpha.800")}
           >
             <Center>
@@ -68,7 +69,7 @@ export default function Projects({
               <Center>
                 <Text
                   m="2"
-                  fontSize="sm"
+                  fontSize="md"
                   color={useColorModeValue("gray.600", "gray.400")}
                 >
                   {description}
@@ -96,30 +97,38 @@ export default function Projects({
 
           <Box mt="2" alignItems="center">
             <Center>
-              <Button
-                as={gatsbyLink}
-                to={github || '#'}
-                size="sm"
-                colorScheme="blue"
-                _hover={{ bg: "blue.500" }}
-                leftIcon={<FaGithub />}
-                marginX="2"
-                target="_blank"
-              >
-                Github
-              </Button>
-              <Button
-                as={gatsbyLink}
-                to={deploy || '#'}
-                size="sm"
-                colorScheme="blue"
-                _hover={{ bg: "blue.500" }}
-                marginX="2"
-                leftIcon={<FaExternalLinkAlt />}
-                target="_blank"
-              >
-                Deploy
-              </Button>
+              {
+                github && (
+                <Button
+                  as={gatsbyLink}
+                  to={github}
+                  size="sm"
+                  colorScheme="blue"
+                  _hover={{ bg: "blue.500" }}
+                  leftIcon={<FaGithub />}
+                  marginX="2"
+                  target="_blank"
+                >
+                  Github
+                </Button>
+                )
+              }
+              {
+                deploy && (
+                <Button
+                  as={gatsbyLink}
+                  to={deploy}
+                  size="sm"
+                  colorScheme="blue"
+                  _hover={{ bg: "blue.500" }}
+                  marginX="2"
+                  leftIcon={<FaExternalLinkAlt />}
+                  target="_blank"
+                >
+                  Deploy
+                </Button>
+                )
+              }
             </Center>
           </Box>
         </Box>
