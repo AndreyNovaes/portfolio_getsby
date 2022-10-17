@@ -1,11 +1,15 @@
 import type { GatsbyConfig } from "gatsby"
 
+const siteMetadata = {
+  favIcon: `./src/images/portfolio.png`,
+  siteUrl: 'https://www.andrey-novaes.me',
+}
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Andrey Novaes`,
     description: `Andrey De Novaes Ferreira portfolio, personal website`,
   },
-  graphqlTypegen: true,
   plugins: [
     {
       resolve: `@chakra-ui/gatsby-plugin`,
@@ -30,7 +34,7 @@ const config: GatsbyConfig = {
         name: `Andrey Novaes`,
         short_name: `Andrey Novaes`,
         start_url: `/`,
-        icon: `./src/assets/images/portfolio.png`,
+        icon: siteMetadata.favIcon,
       },
     },
     {
