@@ -6,12 +6,11 @@ import projects from "../../assets/Projects";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Container maxW="container.xl" centerContent>
-        <Stack direction="row" wrap="wrap" justify="center" m='4'>
+      <Container maxW="container.xl">
+        <Stack direction="row" wrap="wrap" justify="center">
           {projects.map(({ id, title, description, image, github, tags, deploy }) => (
             <ProjectCard
               id={id}

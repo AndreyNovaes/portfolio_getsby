@@ -34,7 +34,8 @@ export default function Projects({
         maxW="lg"
         borderWidth="1px"
         borderRadius="lg"
-        padding="4"
+        marginLeft="8px"
+        // padding="4"
         _hover={{
           boxShadow: "2xl",
           transition: "all 0.5s ease-in-out",
@@ -68,7 +69,7 @@ export default function Projects({
             <Box>
               <Center>
                 <Text
-                  m="2"
+                  // m="2"
                   fontSize="md"
                   color={useColorModeValue("gray.600", "gray.400")}
                 >
@@ -83,10 +84,9 @@ export default function Projects({
               letterSpacing="wide"
               fontSize="xs"
               textTransform="uppercase"
-              ml="2"
             >
               {tags && tags.map((tag) => (
-                <Tag size="sm" key={tag} className={tag} margin='1' color={
+                <Tag size="sm" key={tag} className={tag} color={
                   useColorModeValue("gray.800", "whiteAlpha.800")
                 }>
                   {tag}
@@ -106,7 +106,6 @@ export default function Projects({
                   colorScheme="blue"
                   _hover={{ bg: "blue.500" }}
                   leftIcon={<FaGithub />}
-                  marginX="2"
                   target="_blank"
                 >
                   Github
@@ -121,7 +120,6 @@ export default function Projects({
                   size="sm"
                   colorScheme="blue"
                   _hover={{ bg: "blue.500" }}
-                  marginX="2"
                   leftIcon={<FaExternalLinkAlt />}
                   target="_blank"
                 >
