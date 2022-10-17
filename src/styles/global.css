@@ -1,3 +1,7 @@
 body {
   overflow-x: hidden; 
 }
+
+.project-card {
+  margin: 0 1rem 1rem !important;
+}

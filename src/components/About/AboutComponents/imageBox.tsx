@@ -16,8 +16,7 @@ export default function ImageBox() {
       <Center>
         <Box
           flexShrink={0}
-          w={{ base: '300px', md: '500px' }}
-          h={{ base: '300px', md: '500px' }}
+          w={{ base: '300px', 'xl': '500px' }}
           rounded={'2xl'}
           boxShadow={'2xl'}
           overflow={'hidden'}

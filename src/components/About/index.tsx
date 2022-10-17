@@ -16,11 +16,11 @@ export default function About() {
       <Stack
         direction={{ base: 'column', lg: 'row' }}
         spacing={{ base: '10', md: '28' }}
+        pb={{ base: '10', md: '20' }}
       >
         <Center>
           <TextBox />
         </Center>
-        <br />
         <ImageBox />
       </Stack>
     </>

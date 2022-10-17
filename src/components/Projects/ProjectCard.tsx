@@ -1,11 +1,10 @@
 import React from "react";
 import { Box, Heading, Container, Text, Button, Stack, useDisclosure, Modal, Image, Tag, useColorModeValue, Center } from "@chakra-ui/react";
-import { StaticImage } from "gatsby-plugin-image";
 import { Link as gatsbyLink } from "gatsby";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 interface Project {
-  id: Number;
+  id: number;
   title: string;
   description: string;
   image: string;
@@ -13,7 +12,6 @@ interface Project {
   deploy: string;
   tags: string[];
 }
-
 
 export default function Projects({
   id,
@@ -24,24 +22,23 @@ export default function Projects({
   github,
   deploy
 }: Partial<Project>): JSX.Element {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <>
       <Box
-        key={title}
+        key={id}
+        as="article"
         bg={useColorModeValue('gray.200', 'gray.800')}
         maxW="lg"
-        borderWidth="1px"
         borderRadius="lg"
-        marginLeft="8px"
-        // padding="4"
+        borderWidth="1px"
+        padding='4'
         _hover={{
           boxShadow: "2xl",
           transition: "all 0.5s ease-in-out",
           transform: "scale(1.04)",
           transitionTimingFunction: "cubic-bezier(0.075, 0.82, 0.165, 1)",
         }}
+        className="project-card"
       >
         <Center>
           <Image
@@ -53,7 +50,7 @@ export default function Projects({
             objectFit="cover"
           />
         </Center>
-        <Box p="6">
+        <Box p="5">
           <Box
             fontWeight="semibold"
             as="h4"
@@ -69,7 +66,7 @@ export default function Projects({
             <Box>
               <Center>
                 <Text
-                  // m="2"
+                  m="2"
                   fontSize="md"
                   color={useColorModeValue("gray.600", "gray.400")}
                 >

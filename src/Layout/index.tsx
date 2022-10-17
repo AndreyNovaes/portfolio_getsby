@@ -12,8 +12,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Nav />
           <Spacer />
           <OpacityLowDelay>
-            <Container maxW="container.xl" p={0}>
-              <VStack spacing={0} align="stretch">
+            <Container maxW="container.xl">
+              <VStack align="stretch">
                 <Box as="main">
                   {children}
                 </Box>

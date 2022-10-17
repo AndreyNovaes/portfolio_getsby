@@ -9,7 +9,7 @@ export default function Projects() {
 
   return (
     <>
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" paddingY='10'>
         <Stack direction="row" wrap="wrap" justify="center">
           {projects.map(({ id, title, description, image, github, tags, deploy }) => (
             <ProjectCard
