@@ -2,11 +2,11 @@ import { Box, Flex, Link, useColorModeValue, IconButton } from "@chakra-ui/react
 import React from "react"
 import Socials from "../../../assets/SocialMedias"
 
-export default function NavSocialLinks() {
+export default function NavSocialLinks({socialLinks}: {socialLinks: boolean}) {
   return (
     <Flex>
       <Box>
-        {Socials.map((social) => (
+        {socialLinks && Socials.map((social) => (
           <Link key={social.name} href={social.path} isExternal>
             <IconButton
               aria-label={social.name}
@@ -24,4 +24,8 @@ export default function NavSocialLinks() {
       </Box>
     </Flex>
   )
+}
+
+NavSocialLinks.defaultProps = {
+  socialLinks: true,
 }

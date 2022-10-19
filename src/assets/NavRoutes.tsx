@@ -11,6 +11,10 @@ const routes = [
     name: 'Projetos',
     path: '/projetos',
   },
+  {
+    name: 'Contato',
+    path: '/contato',
+  },
 ]
 
 export default routes

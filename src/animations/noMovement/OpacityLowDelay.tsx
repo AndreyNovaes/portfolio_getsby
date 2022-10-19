@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
 export default function OpacityLowDelay({ children }: { children: React.ReactNode }) {
-  console.log(location);
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, ChakraProvider, Container, Flex, VStack, Spacer } from '@chakra-ui/react'
+import { Box, ChakraProvider, Container, Flex, VStack, Spacer, ColorModeScript } from '@chakra-ui/react'
 import Nav from '../components/Nav'
 import OpacityLowDelay from '../animations/noMovement/OpacityLowDelay'
 import Footer from '../components/Footer'

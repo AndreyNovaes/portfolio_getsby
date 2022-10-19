@@ -1,7 +1,6 @@
 import React from "react"
 import './src/styles/global.css'
 
-
 // Nprogress config
 import NProgress, { NProgressOptions } from "nprogress"
 
@@ -34,18 +33,22 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
 // Layout config with gatsby wrapper
 import Layout from './src/Layout'
-import { ChakraProvider, theme } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript, extendTheme, ThemeConfig, useColorModePreference } from '@chakra-ui/react'
 import { Helmet } from "react-helmet"
+
+const config: ThemeConfig = {
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+}
+
+const customTheme = extendTheme({ config })
 
 export const wrapPageElement = ({ element, props }) => {
   // Wraps every page in a component
-  theme.fonts.heading = 'Poppins, sans-serif'
-  theme.fonts.body = 'Poppins, sans-serif'
-  theme.config.initialColorMode = 'dark'
 
   return (
     <>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider theme={customTheme}>
         <Layout {...props}>
           <Helmet>
             <title>Andrey Novaes</title>
